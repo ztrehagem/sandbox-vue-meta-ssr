@@ -4,7 +4,8 @@
   "scripts": {
     "start": "node dist/main.js",
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc",
+    "prebuild": "npm run clean",
+    "build": "tsc",
     "watch": "tsc -w"
   },
   "dependencies": {

@@ -4,5 +4,8 @@ export const routes: RouteRecordRaw[] = [
   {
     path: "/",
     component: () => import("../pages/index.vue"),
-  }
-]
+    meta: {
+      metaInfo: {},
+    },
+  },
+];
