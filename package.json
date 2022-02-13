@@ -4,12 +4,14 @@
   "scripts": {
     "start": "node dist/main.js",
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc",
+    "prebuild": "npm run clean",
+    "build": "tsc",
     "watch": "tsc -w"
   },
   "dependencies": {
     "express": "^4.17.2",
     "vue": "^3.2.29",
+    "vue-meta": "^3.0.0-alpha.2",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
